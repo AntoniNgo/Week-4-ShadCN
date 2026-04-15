@@ -34,6 +34,7 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-primary-text: var(--primary-text);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -52,7 +53,8 @@
    All colours use HEX so you can copy values from Figma and paste here.
    Key variables:
    — --background / --foreground: page background and text
-   — --primary / --primary-foreground: primary buttons, links, badges (e.g. Wise green)
+   — --primary / --primary-foreground: primary filled surfaces (e.g. buttons)
+   — --primary-text: brand-coloured text on the page background (links, emphasis; light: 700, dark: 500)
    — --secondary, --muted, --accent: secondary UI surfaces
    — --border, --input, --ring: borders and focus rings
    — --radius: default border radius (buttons, cards, inputs)
@@ -66,18 +68,22 @@
   --grey-500: #2f322d;
   --grey-600: #0b0c0a;
   --grey-700: #0b0c0a;
+  --brand-green-100: #d6f9ce;
+  --brand-green-500: #9ee770;
+  --brand-green-700: #163300;
 
   --radius: 0.625rem;
   --background: var(--grey-100);
   --foreground: var(--grey-500);
-  --card: var(--grey-100);
+  --card: var(--grey-200);
   --card-foreground: var(--grey-500);
   --popover: var(--grey-100);
   --popover-foreground: var(--grey-500);
-  --primary: var(--grey-500);
-  --primary-foreground: var(--grey-100);
-  --secondary: var(--grey-200);
-  --secondary-foreground: var(--grey-500);
+  --primary: var(--brand-green-500);
+  --primary-foreground: var(--brand-green-700);
+  --primary-text: var(--brand-green-700);
+  --secondary: var(--brand-green-100);
+  --secondary-foreground: var(--brand-green-700);
   --muted: var(--grey-200);
   --muted-foreground: var(--grey-400);
   --accent: var(--grey-200);
@@ -103,16 +109,17 @@
 
 /* DESIGNER: Dark mode — add class "dark" to <html> to enable; these vars override :root in dark mode */
 .dark {
-  --background: var(--grey-500);
+  --background: var(--grey-700);
   --foreground: var(--grey-100);
   --card: var(--grey-500);
   --card-foreground: var(--grey-100);
   --popover: var(--grey-500);
   --popover-foreground: var(--grey-100);
-  --primary: var(--grey-200);
-  --primary-foreground: var(--grey-500);
-  --secondary: var(--grey-400);
-  --secondary-foreground: var(--grey-100);
+  --primary: var(--brand-green-500);
+  --primary-foreground: var(--brand-green-700);
+  --primary-text: var(--brand-green-500);
+  --secondary: var(--brand-green-700);
+  --secondary-foreground: var(--brand-green-500);
   --muted: var(--grey-400);
   --muted-foreground: var(--grey-300);
   --accent: var(--grey-400);
